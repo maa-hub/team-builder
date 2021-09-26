@@ -7,8 +7,8 @@ const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
 const renderHTML = require("./src/generateHTML.js");
 
-const fileDirectory = path.resolve(__dirname, "fileoutput");
-const filePath = path.join(OUTPUT_DIR, "index.html");
+const outputFile = path.resolve(__dirname, "fileoutput");
+const fileFolder = path.join(outputFile , "index.html");
 
 // Employee array
 let employeesArr = [];
@@ -88,7 +88,7 @@ const questions = [
 
   
     const init = () => {
-        if (fs.existsSync(filePath)) {
+        if (fs.existsSync(fileFolder)) {
             inquirer.prompt({
                 type: "confirm",
                 message: "The index.html file already exists. Overwrite?",
@@ -164,11 +164,11 @@ const questions = [
                 newEmployee();
             } 
             else if (await createEmployee === false) {
-            if (!fs.existsSync(fileDirectory)) {
-                fs.mkdirSync(fileDirectory)
+            if (!fs.existsSync(outputFile)) {
+                fs.mkdirSync(outputFile)
             }
             
-            fs.writeFile(filePath, renderHTML(array), (err) => {
+            fs.writeFile(fileFolder, renderHTML(array), (err) => {
         
                 if (err) {
                     return console.log(err);
