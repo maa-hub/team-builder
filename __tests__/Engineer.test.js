@@ -1,13 +1,13 @@
 const Engineer = require("../lib/Engineer");
 
 test("Ability to set GitHub username using constructor function", () => {
-    const github = "malloryfaria";
-    const employee = new Engineer("Mallory", 1, "mallory.faria@gmail.com", github);
-    expect(employee.github).toBe(github);
+    const githubName = "maa-hub";
+    const employee = new Engineer("Maame", 1, "maame@gmail.com", githubName);
+    expect(employee.githubName).toBe(githubName);
   });
 
-  test("getRole() should return Engineer as a role", () => {
+  test("getEmployeeRole() should return Engineer as a role", () => {
     const role = "Engineer";
-    const employee = new Engineer("Mallory", 1, "mallory.faria@gmail.com", "malloryfaria");
-    expect(employee.getRole()).toBe(role);
+    const employee = new Engineer("Maame", 1, "maame@gmail.com", "maa-hub");
+    expect(employee.getEmployeeRole()).toBe(role);
   });

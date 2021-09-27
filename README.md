@@ -34,10 +34,10 @@ THEN I exit the application, and the HTML is generated
 * NPM
 
 # Link to README video 
-🎥 Full video tutorial can be found [here]  (https://drive.google.com/file/d/1uhsCPjQcV9XG7ni655qbpjQzdTZMcCCC/view)
+🎥 Full video tutorial can be found [here]  (https://drive.google.com/file/d/1uGdro-3skdQwZSzoB6AG9IfAb3MT1xIS/view)
 
 # Sample HTML file
-A sample HTML file can be found in the output folder
+A sample HTML file can be found in the fileoutput folder
 
 ## Contribution
 Made with ❤️ by Maame (with assistance from class repository)

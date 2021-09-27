@@ -1,13 +1,13 @@
 const Intern = require("../lib/Intern");
 
 test("Ability to set school using constructor function", () => {
-    const school = "Hogwarts School of Witchcraft";
-    const employee = new Intern("Mallory", 1, "mallory.faria@gmail.com", school);
-    expect(employee.school).toBe(school);
+    const internSchool = "Rutgers School";
+    const employee = new Intern("Maame", 1, "maame@gmail.com", internSchool);
+    expect(employee.internSchool).toBe(internSchool);
   });
 
-  test("getRole() should return Intern as a role", () => {
+  test("getEmployeeRole() should return Intern as a role", () => {
     const role = "Intern";
-    const employee = new Intern("Mallory", 1, "mallory.faria@gmail.com", "malloryfaria");
-    expect(employee.getRole()).toBe(role);
+    const employee = new Intern("Maame", 1, "maame@gmail.com", "maa-hub");
+    expect(employee.getEmployeeRole()).toBe(role);
   });
